@@ -1,0 +1,9 @@
+#carousel {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+#carousel img {
+	display: hidden; /* скрывать картинки, пока галерея не загрузилась */
+	cursor: auto; /* pointer - если картинки являются ссылками */
+}

@@ -1,0 +1,271 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		//The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+		title MODUSversus
+		//Bootstrap
+		link(href='css/bootstrap.min.css', rel='stylesheet')
+		link(href='css/font-awesome.min.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:800,600,400,600italic,700,400italic&subset=cyrillic,latin', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/style.css')
+		link(rel='stylesheet', href='style.css')
+		//HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+		//WARNING: Respond.js doesn't work if you view the page via file://
+		//if lt IE 9
+			script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+			script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+		// jQuery (necessary for Bootstrap's JavaScript plugins)
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+		// Include all compiled plugins (below), or include individual files as needed
+		script(src='js/bootstrap.min.js')
+		script(type='text/javascript', src='carousel/jquery.waterwheelCarousel.js')
+		script(src='js/main.js', type='text/javascript')
+	body
+		.wrapper
+			.navbar.navbar-default.navbar-top
+				.container
+					.row
+						.navbar-header
+							button(type='button' data-toggle='collapse' data-target='#responsive-menu').navbar-toggle
+								span.sr-only 
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							h2
+								a.navbar-brand(href='#')
+									| MODUS
+									span(id="brand") versus
+						.collapse.navbar-collapse#responsive-menu
+							ul.nav.navbar-default.navbar-nav.pull-right
+								li
+									a(href='#').active HOME
+								li
+									a(href='#') ABOUT
+								li
+									a(href='#') SERVICES
+								li.dropdown
+									a.dropdown-toggle(href='#' data-toggle='dropdown')
+										b.caret 
+										| PORTFOLIO
+									ul.dropdown-menu.block#dropdown-menu
+										li
+											a(href='#') > Portfolio 2 column page
+										li
+											a(href='#') > Portfolio 2 column page
+										li
+											a(href='#') > Portfolio 2 column page
+								li
+									a(href='#') BLOG
+								li
+									a(href='#') FEATURES
+								li
+									a(href='#') CONTACTS
+								li(id="poisk")
+									form
+										span.icon
+											i.fa.fa-search
+										input(type='search', placeholder='')
+			#carousel1.carousel.slide
+				//Индикаторы слайдов
+				ol.carousel-indicators
+					li.active(data-target="#carousel1" data-slide-to="0")
+					li(data-target="#carousel1" data-slide-to="1")
+					li(data-target="#carousel1" data-slide-to="2")
+				//Слайды
+				.carousel-inner
+					.item.active
+						img(src='img/img-slider.png', alt='...')
+						.carousel-caption
+							h2 VESTIBULUM
+							.bg-p
+								p Maecenas tincidunt, augue et rutrum condimentum,
+								p libero lectus mattis orci, ut commodo.
+					.item
+						img(src='img/img-slider.png', alt='...')
+						.carousel-caption
+							h2 VESTIBULUM
+							.bg-p
+								p Maecenas tincidunt, augue et rutrum condimentum,
+								p libero lectus mattis orci, ut commodo.
+					.item
+						img(src='img/img-slider.png', alt='...')
+						.carousel-caption
+							h2 VESTIBULUM
+							.bg-p
+								p Maecenas tincidunt, augue et rutrum condimentum,
+								p libero lectus mattis orci, ut commodo.
+				//Стрелки переключения слайда
+				a(href='#carousel1' data-slide="prev").left.carousel-control
+				a(href='#carousel1' data-slide="next").right.carousel-control
+			.container
+				.row
+					.wrapper_intro
+						.intro
+							h3.col-xs-12.col-sm-7.col-md-6.col-lg-4 Some of our top services
+							p.col-xs-12.col-sm-8.col-md-8.col-lg-9 Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+							button.btn.pull-right#view VIEW MORE
+			.container
+				.row
+					.services.col-xs-12.col-sm-6.col-md-3.col-lg-3(id="hand")
+						.wrapper_img
+							img(src='img/hand.png', alt='...')
+						h4 SUSPENDISSE
+						p.hand Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. 
+						button.btn.active read more
+					.services.col-xs-12.col-sm-6.col-md-3.col-lg-3(id="key")
+						.wrapper_img
+							img(src='img/key.png', alt='...')
+						h4 MAECENAS 
+						p.key Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+						button.btn read more
+					.services.col-xs-12.col-sm-6.col-md-3.col-lg-3(id="flag")
+						.wrapper_img
+							img(src='img/flag.png', alt='...')
+						h4 ALIQUAM 
+						p.flag Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. 
+						button.btn read more
+					.services.col-xs-12.col-sm-6.col-md-3.col-lg-3(id="kolba")
+						.wrapper_img
+							img(src='img/kolba.png', alt='...')
+						h4 HABITASSE 
+						p.kolba Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. 
+						button.btn read more
+			.container
+				.row.second_slider
+					h1 WHY MODUS VERSUS?
+					p Capacitance cascading integer reflective interface data development high bus cache dithering transponder.  
+					#carousel.col-xs-0.col-sm-12.col-md-12.col-lg-12
+						img(src='img/center.png', alt='')
+						img(src='img/left.png', alt='')
+						img(src='img/right.png', alt='')
+			.container
+				.row
+					.about
+						.choose.col-lg-3.col-md-3.col-sm-4.col-xs-12
+							h3 Why Choose Us ?
+							p
+								i.fa.fa-arrow-right(aria-hidden='true')
+								a(href='#') Quisque at massa ipsum 
+							p
+								i.fa.fa-arrow-right(aria-hidden='true')
+								a(href='#') Maecenas a lorem augue, egestas
+							p
+								i.fa.fa-arrow-right(aria-hidden='true')
+								a(href='#') Cras vitae felis at lacus eleifend
+							p
+								i.fa.fa-arrow-right(aria-hidden='true')
+								a(href='#') Etiam auctor diam pellentesque
+							p
+								i.fa.fa-arrow-right(aria-hidden='true')
+								a(href='#') Nulla ac massa at dolor
+							p
+								i.fa.fa-arrow-right(aria-hidden='true')
+								a(href='#') Condimentum eleifend vitae vitae
+						.before_diagrams.col-xs-12.col-sm-8.col-md-6.col-lg-6
+							p(id="text_before")
+								| Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus 
+								a(href='') vehicula mattis
+								| . Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
+						.img_block.col-xs-12.col-sm-8.col-md-6.col-lg-6
+							img(src='img/50.png', alt='...')
+							img(src='img/70.png', alt='...')
+							img(src='img/80.png', alt='...')
+							img(src='img/100.png', alt='...')
+						.say.col-sm-8.col-md-3.col-lg-3
+							h3 What Client’s Say ?
+							p
+								cite Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum
+							h4 Jhon Doe
+			footer.footer
+				.container
+					.row
+						.contacts.col-xs-6.col-sm-4.col-md-4.col-lg-4
+							h1
+								| MODUS
+								span(id="sayt") versus
+							p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.
+							p(id="p_phone")
+								| Phone:
+								span(id="phone") 182 2569 5896
+							p
+								| e-mail:
+								span(id="e-mail") info@modu.versus
+						.company.col-xs-3.col-sm-2.col-md-2.col-lg-2
+							h4 Company
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') About
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') FAQ
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Contact
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Terms
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Privacy
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Testimonials
+						.community.col-xs-3.col-sm-2.col-md-2.col-lg-2
+							h4 Community
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Blog
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Forum
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Support
+							p
+								i.fa.fa-angle-right(aria-hidden='true') 
+								a(href='#') Newslette
+						.blog.col-xs-4.col-sm-4.col-md-4.col-lg-4
+							.row
+								h3
+									| from the
+									span(id="bold_blog") BLOG
+								.icon.col-xs-3.col-sm-3.col-md-3.col-lg-3
+									p
+										i.fa.fa-picture-o(aria-hidden='true')
+									p
+										i.fa.fa-picture-o(aria-hidden='true')
+								.text_date.col-xs-9.col-sm-9.col-md-9.col-lg-9
+									.first_date
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										p.date 26 May, 2013
+									.second_date
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										p.date 26 May, 2013
+			.podval
+				.container
+					.row
+						p 2013  ModusVersus
+						.podval_icons.pull-right
+							a(href='#')
+								i.fa.fa-facebook(aria-hidden='true')
+							a(href='#')
+								i.fa.fa-google-plus(aria-hidden='true')
+							a(href='#')
+								i.fa.fa-twitter(aria-hidden='true')
+							a(href='#')
+								i.fa.fa-rss(aria-hidden='true')
+
+
+
+
+
+
+
+
+
+
+
+		
